@@ -15181,6 +15181,25 @@ entries:
   rancher-pushprox:
   - annotations:
       catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/kube-version: '>= 1.16.0-0 <= 1.27.0-0'
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/rancher-version: '>= 2.8.0-0 < 2.9.0-0'
+      catalog.rancher.io/certified: rancher
+      catalog.rancher.io/namespace: cattle-monitoring-system
+      catalog.rancher.io/release-name: rancher-pushprox
+    apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-10-12T13:55:00.407870773-04:00"
+    description: Sets up a deployment of the PushProx proxy and a DaemonSet of PushProx
+      clients.
+    digest: efe7447d968e98b89a6ae19cb416bcc5dbb8704052211923a92c4d507a05c7d6
+    name: rancher-pushprox
+    type: application
+    urls:
+    - assets/rancher-pushprox/rancher-pushprox-103.0.0.tgz
+    version: 103.0.0
+  - annotations:
+      catalog.cattle.io/hidden: "true"
       catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.27.0-0'
       catalog.cattle.io/os: linux
       catalog.rancher.io/certified: rancher
